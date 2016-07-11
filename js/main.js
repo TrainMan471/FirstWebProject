@@ -1,50 +1,15 @@
 $(document).on('ready', function() {
-$(".regular").slick({
-    dots: true,
-    infinite: true,
-     slidesToShow: 3,
-     slidesToScroll: 3,
-	 adaptiveHeight: true,
-  });
-  $(".center").slick({
+$(".variable").slick({
         dots: true,
         infinite: true,
-        centerMode: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        variableWidth: false,
 		adaptiveHeight: true,
-		centerPadding: '40px',
-		responsive: [
-		{
-		 breakpoint: 768,
-		 settings: {
-		 arrows: false,
-		 centerMode: true,
-		 centerPadding: '40px',
-		 slidesToShow: 3
-		 }
-		},
-		{
-		breakpoint: 480,
-		settings: {
-		arrows: false,
-		centerMode: true,
-		centerPadding: '40px',
-		slidesToShow: 1
-		}
-	}
-]
-
-      });
-      $(".variable").slick({
-        dots: true,
-        infinite: true,
-        variableWidth: true,
-		adaptiveHeight: true
+		autoplay: true,
+		autoplaySpeed: 2995
       });
     });
 	
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+/* Toggle between adding and removing the "responsive" class to navbartop when the user clicks on the icon */
 function myFunction() {
-    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+    document.getElementsByClassName("navbartop")[0].classList.toggle("responsive");
 }
