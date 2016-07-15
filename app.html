@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+	  <title>Rosary Description</title>
+	  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+	  <link rel="stylesheet" type="text/css" href="app.css"></link>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	  <script src="app.js"></script>
+	    <ul class="navbartop">
+  <li><a class="dropdown" href="#home">Home</a></li>
+  <li><a href="#Learn About The Rosary and Vote for Your Mystery">Learn about the Rosary</a></li>
+  <li><a href="#about">The Seven Sorrows Rosary</a></li>
+  <li><a href="HTML/submit.html">Put In A Prayer Request</a></li>
+  <li><a href="#pray">Pray A Rosary</a></li>
+  <li class="icon">
+  	  <a href="javascript:void(0);" onclick="respNavBar()">&#9776;</a>
+	</li>
+  </ul>
+ </head>
+ <body>
+ 
+ <h1>What are the origins of the Rosary?</h1>
+ <p>
+  There are several stories of how the Rosary originated. There is evidence of it appearing even in Pre-Christian times,
+  in which repeated prayers and beads were used to help someone meditate. There is even evidence from the Middle Ages that
+  these strings of prayer beads were used to say Our Fathers and Hail Marys. The strings of beads used to say these prayers
+  became known as "Paternoser", which means "Our Father." 
+  		 Between the 12th and 15th centuries, the structure of the rosary evolved and now 50 "Hail Marys" were recited along with
+the Our Fathers.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </body>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<footer ng-app="myModule">
+	  <div ng-controller="myController">
+	  	   <table style="border-style:groove;">
+		   		  <thead style="border-style:groove;">
+				  		 <tr style="border-style:groove;">
+						 	 <th style="border-style:groove;">Name</th>
+							 <th style="border-style:groove;">One Star</th>
+						     <th style="border-style:groove;">Two Stars</th>
+							 <th style="border-style:groove">Three Stars</th>
+							 <th style="border-style:goove">Four Stars</th>
+							 <th style="border-style:groove;">Five Stars</th>
+						  </tr>
+				       </thead>
+				      <tbody>
+				    <tr ng-repeat="mystery in mysteries">
+				        <td>{{mystery.name}}</td>
+	                    <td style="border-style:groove;">
+						<input type="button" value="*" ng-click="incrementOneStar(mystery)">
+						{{mystery.OneStar}}
+						</td>
+				        <td style="border-style:groove;">
+						<input type="button" value="**" ng-click="incrementTwoStar(mystery)">
+						{{mystery.TwoStar}}</td>
+					     <td style="border-style:groove;">
+						 <input type="button" value="***" ng-click="incrementThreeStar(mystery)">
+						 {{mystery.ThreeStar}}
+					   </td>
+					   <td style="border-style:groove;">
+					   <input type="button" value="****" ng-click="incrementFourStar(mystery)">
+					   {{mystery.FourStar}}
+					   </td>
+					   <td style="border-style:groove;">
+					   <input type="button" value="*****" ng-click="incrementFiveStar(mystery)">
+					   {{mystery.FiveStar}}
+					   </td>
+				  </tr>
+			</tbody>
+		</table>
+	</div>
+</footer>
+</html>

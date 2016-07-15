@@ -2,22 +2,39 @@ var app = angular
 		  .module("myModule", [])
 		  .controller("myController", function($scope) {
 		  var mysteries = [
-		  { name: "Sorrowful Mysteries", likes: 0, dislikes: 0 },
-		  { name: "Joyful Mysteries", likes: 0, dislikes: 0 },
-		  { name: "Luminous Mysteries", likes: 0, dislikes: 0 },
-		  { name: "Glorious Mysteries", likes: 0, dislikes: 0 },
+		  { name: "Sorrowful Mysteries", OneStar: 0, TwoStar: 0, ThreeStar: 0, FourStar: 0, FiveStar: 0 },
+		  { name: "Joyful Mysteries", OneStar: 0, TwoStar: 0, ThreeStar: 0, FourStar:0, FiveStar: 0 },
+		  { name: "Luminous Mysteries", OneStar: 0, TwoStar: 0, ThreeStar: 0, FourStar: 0, FiveStar: 0 },
+		  { name: "Glorious Mysteries",  OneStar: 0, TwoStar: 0, ThreeStar: 0, FourStar: 0, FiveStar: 0 },
 		  ];
 		  
 		  $scope.mysteries = mysteries;
 		  
-		  $scope.incrementLikes = function (mystery) {
-		  mystery.likes++;
+		  $scope.incrementOneStar = function (mystery) {
+		  mystery.OneStar++;
 		  }
 		  
-		  $scope.incrementDislikes = function (mystery) {
-		  mystery.dislikes++;
+		  $scope.incrementTwoStar = function (mystery) {
+		  mystery.TwoStar++;
 		  
 		  }
+		  
+		  $scope.incrementThreeStar = function(mystery) {
+		  mystery.ThreeStar++;
+		  
+		  }
+		  
+		  $scope.incrementFourStar = function(mystery) {
+		  mystery.FourStar++;
+		  
+		  }
+		  
+		  $scope.incrementFiveStar = function(mystery) {
+		  mystery.FiveStar++;
+		  
+		  }
+		  
+		  
 		  
 		 });
 
