@@ -1,0 +1,13 @@
+p {
+font-style:italic;
+
+ }
+ 
+ h1 {
+ font-style:italic;
+ 
+  }
+  
+#gradient {
+background:linear-gradient(to right,lightblue,white,firebrick,white);
+ }
