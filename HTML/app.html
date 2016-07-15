@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head>
+	  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	  <script src="app.js"></script>
+</head>
+<body ng-app="myModule">
+	  <div ng-controller="myController">
+	  	   <table style="border-style:groove;">
+		   		  <thead style="border-style:groove;">
+				  		 <tr style="border-style:groove;">
+						 	 <th style="border-style:groove;">Name</th>
+							 <th style="border-style:groove;">Likes</th>
+						     <th style="border-style:groove;">Cool, but Not my Favorite</th>
+							 <th>Likes/Dislikes</th>
+						  </tr>
+				       </thead>
+				      <tbody>
+				    <tr ng-repeat="mystery in mysteries">
+				        <td>{{mystery.name}}</td>
+	                    <td style="border-style:groove;">{{mystery.likes}}</td>
+				        <td style="border-style:groove;">{{mystery.dislikes}}</td>
+						<td>
+							<input type="button" value="Like" ng-click="incrementLikes(mystery)" style="border-style:groove;"></input>
+							<input type="button" value="It's Cool, but not my favorite" ng-click="incrementDislikes(mystery)" style="border-style:groove;"></input>
+						</td>
+				  </tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
