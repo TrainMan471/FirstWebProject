@@ -5,6 +5,7 @@
 
 h1 {
 font-family: ariali;
+
 text-align:center;
 font-weight:bolder;
 font-style:oblique;
@@ -70,15 +71,18 @@ ul.navbartop {
 /* Float the list items side by side */
 ul.navbartop li {float: left;}
 
+
 /* Style the links inside the list items */
 ul.navbartop li a {
     display: inline-block;
     color: #f3f3f3;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
     font-size: 17px;
+    font-family:cursive;
+    font-style:italic;
+    padding:14px 16px;
 }
 
 /* Change background color of links on hover */
