@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WorldWide Rosary For Peace</title>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></link>
+  <link rel="stylesheet" type="text/css" href="../CSS/submit.css">
+   <div class="navbartop">
+<ul class="navbartop">
+<li><a class="dropdown" href="../HTML/index.html">Home</a></li>
+<li><a href="../HTML/app.html">Learn about the Rosary</a></li>
+<li><a href="#SevenSorrows">The Seven Sorrows Rosary</a></li>
+<li><a href="#index.ejs">Put In A Prayer Request</a></li>
+<li><a href="#pray">Pray A Rosary</a></li>
+<li class="icon">
+    <a href="javascript:void(0);" onclick="respNavBar()">&#9776;</a>
+</li>
+</ul>
+</head>
+<body>
+  If you want, Put your name and the title of your prayer request down below. When you press "Submit", your name and prayer request will be added to the list so other people can see and pray for it.
+
+  <ul class="requests">
+  <% for(var i=0; i<requests.length; i++) {%>
+    <li class="request">
+      <span><%= requests[i].name %></span>
+      <span><%= requests[i].quote %></span>
+    </li>
+  <% } %>
+  </ul>
+
+  <form action="/requests" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="request" name="request">
+    <button type="submit">Submit</button>
+  </form>
+<script src="../static/js/main.js"></script>
+</body>
+</html>
