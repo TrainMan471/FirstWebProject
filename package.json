@@ -1,16 +1,24 @@
 {
-  "name": "myfirstwebsite",
+  "name": "code-louisville-project-using-mean-stack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Code for Code Louisville Project: Version 1.1 should be done July 22.",
   "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mongodb": "^2.2.4"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "mocha"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TrainMan471/FirstWebProject.git"
   },
-  "author": "Mike Brown",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TrainMan471/FirstWebProject/issues"
