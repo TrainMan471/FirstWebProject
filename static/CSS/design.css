@@ -1,0 +1,102 @@
+/*CSS STYLES FOR THE <h1> and <h2> elements in main.html*/
+
+
+
+
+h1 {
+font-family: ariali;
+
+text-align:center;
+font-weight:bolder;
+font-style:oblique;
+
+
+
+ }
+ 
+ h2 {
+ font-style:italic;
+ font-family:ariali;
+ text-align:center;
+ font-weight:200;
+  }
+ 
+ /*Slider for Footer*/
+ 
+  html, footer {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+   
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+    
+    /*Adjusting Slide Pictures for Footer and Body*/
+    
+  .gallery {
+  width: 100%;
+  height:auto;
+   }
+   
+   /*Navigation Bar */
+  /* Remove margins and padding from the list, and add a black background color */
+ul.navbartop {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.navbartop li {float: left;}
+
+
+/* Style the links inside the list items */
+ul.navbartop li a {
+    display: inline-block;
+    color: #f3f3f3;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family:cursive;
+    font-style:italic;
+    padding:14px 16px;
+}
+
+/* Change background color of links on hover */
+ul.navbartop li a:hover {background-color: #399;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.navbartop li.icon {display: none;}
+
+
+/*Styles for body */
+
+.gradient{
+background:#fff;
+
+}
+ 
+ 
