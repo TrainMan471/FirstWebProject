@@ -3,7 +3,7 @@ font-family:cursive;
 font-style:italic;
 
  }
- 
+
    /*Navigation Bar */
   /* Remove margins and padding from the list, and add a black background color */
 ul.navbartop {
@@ -35,3 +35,31 @@ ul.navbartop li a:hover {background-color: #399;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.navbartop li.icon {display: none;}
+
+
+
+/*Making the prayer submission box not look like absolute crap */
+.prettify {
+ height: 50%;
+ width: 50%;
+ font-family: cursive;
+ font-style: italic;
+
+}
+
+.request {
+font-family: cursive;
+font-style: italic;
+
+}
+
+h2 {
+font-family: cursive;
+font-style: italic;
+}
+
+h3 {
+  font-size: 50%;
+  font-family: cursive;
+  font-style: italic;
+}

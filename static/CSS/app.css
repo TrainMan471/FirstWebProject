@@ -31,7 +31,7 @@ ul.navbartop li a:hover {background-color: #399;}
 ul.navbartop li.icon {display: none;}
 
 .center {
-padding:25px;
+padding:15px;
 font-family:cursive;
 font-style:italic;
  }
@@ -42,4 +42,22 @@ padding:5px 5px 5px 5px;
 font-family:cursive;
 font-style:italic;
 
+ }
+
+ h2 {
+   padding: 5px 5px 5px 5px;
+   font-family:cursive;
+   font-style: italic;
+ }
+
+ .mystery {
+font-family: cursive;;
+font-style: italic;
+text-align: left;
+padding: 7px 7px 7px 7px;
+
+ }
+
+ .padds {
+   padding: 20px 10px 10px 20px;
  }
