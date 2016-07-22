@@ -25,4 +25,6 @@ to GitHub I had not intended to. I will list the files needed to be reviewed.
 3)package.json
 4)server.js
 
-Everything else can be ignored, as I did not end up using it for the website/
+Everything else can be ignored, as I did not end up using it for the website.
+
+UPDATE: Removed most of the unecessary code, everything slick 1.6.0 and up can be ignored.
