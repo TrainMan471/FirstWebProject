@@ -1,4 +1,4 @@
-console.log('May the node be with you');
+console.log('testing');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname,'static')));
 app.get('/index.ejs', function(req,res) {
   db.collection('requests').find().toArray(function(error,result){
     if(error) return console.log(error);
-    //renders index..ejs(The template file)
+    //Have to use render here instead of sendFile because it's a template file
     res.render('index.ejs',{requests: result});
   });
 });
