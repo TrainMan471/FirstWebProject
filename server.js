@@ -46,6 +46,6 @@ app.post('/requests', function(req,res){
     }else {
       console.log("Successfully saved to the database!");
     }
-    res.redirect('/');
+    res.redirect('/index.ejs');
   });
 });
